@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Imagens de tamanhos diferentes</title>
+<meta charset="utf-8">
+<meta name="author" content="Vítor Bernardo Sarmet">
+</head>
+
+<body>
+<picture>
+    <source media="(max-width: 700px)" srcset="gato.jpg">
+    <source media="(max-width: 1024px)" srcset="gato2.jpg">
+    <source media="(max-width: 1336px)" srcset="gato3.jpg">
+    <img src="gato3.jpg">
+</picture>
+
+<picture>
+    <source media="(max-width: 640px)" srcset="rural_pequena.jpg">
+    <source media="(max-width: 1024px)" srcset="rural_media.jpg">
+    <source media="(max-width: 1300px)" srcset="rural_grande.jpg">
+    <img src="rural_grande.jpg">
+</picture>
+
+<picture>
+    <source media="(max-width: 640px)" srcset="mar_pequeno.jpg">
+    <source media="(max-width: 1024px)" srcset="mar_medio.jpg">
+    <source media="(max-width: 1300px)" srcset="mar_grande.jpg">
+    <img src="mar_grande.jpg">
+</picture>
+
+</body>
+
+</html>
