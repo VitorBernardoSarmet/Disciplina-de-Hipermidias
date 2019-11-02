@@ -88,7 +88,7 @@
        <legend>Testes de input</legend>
        
        Telefone:<input type="tel" name="testetel">
-       <br>
+       
        Date:<input type="date" name="Data" value="Data"/>
        </fieldset>
        
