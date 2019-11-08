@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Vítor Bernardo Sarmet">
+  <meta name="description" content="Exercício Página de form">
+  <meta name="keywords" content="form, html, exercício">
+  <title>Página de forms</title>
+</head>
+<body>
+  <h1>Aula de Hipermidias</h1>
+  <h2>Preencha o formulário abaixo</h2>
+
+  <form>
+ 	<fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" id="nome">
+      <label for="sobrenome">Sobrenome: </label>
+      <input type="text" name="sobrenome" id="sobrenome">
+      <br>
+      <br>
+      <label for="nasc">Nascimento: </label>
+      <input type="date" name="nascimento" id="nasc">
+      <br>
+      <br>
+      <label for="rg">RG: </label>
+      <input type="text" name="rg" id="rg">
+      <br>
+      <br>
+      <label for="cpf">CPF: </label>
+      <input type="text" name="cpf" id="cpf">
+      <label for="-">-</label>
+      <input type="text" name="-" id="-">
+    </fieldset>
+	<br>
+    <fieldset>
+      <legend>Dados de Endereço</legend>
+      <label for="rua">Rua: </label>
+      <input type="text" name="rua" id="rua">
+      <label for="num">Numero: </label>
+      <input type="text" name="numero" id="num">
+      <br>
+      <br>
+      <label for="bairro">Bairro: </label>
+      <input type="text" name="bairro" id="bairro">
+      <br>
+      <br>
+      <label for="estado">Estado: </label>
+      <select name="Estado" id="estado">
+        <option value="1">Acre</option>
+        <option value="2">Alagoas</option>
+        <option value="3">Amapá</option>
+        <option value="4">Amazonas</option>
+        <option value="5">Bahia</option>
+        <option value="6">Ceará</option>
+        <option value="7">Distrito Federal</option>
+        <option value="8">Espírito Santo</option>
+        <option value="9">Goiás</option>
+        <option value="10">Maranhão</option>
+        <option value="11">Mato Grosso</option>
+        <option value="12">Mato Grosso do Sul</option>
+        <option value="13">Minas Gerais</option>
+        <option value="14">Pará</option>
+        <option value="15">Paraíba</option>
+        <option value="16">Paraná</option>
+        <option value="17">Pernambuco</option>
+        <option value="18">Piauí</option>
+        <option value="19">Rio de Janeiro</option>
+        <option value="20">Rio Grande do Norte</option>
+        <option value="21">Rio Grande do Sul</option>
+        <option value="22">Rondônia</option>
+        <option value="23">Roraima</option>
+        <option value="24">Santa Catarina</option>
+        <option value="25">São Paulo</option>
+        <option value="26">Sergipe</option>
+        <option value="27">Tocantins</option>
+      </select>
+      <br>
+      <br>
+      <label for="cidade">Cidade: </label>
+      <input type="text" name="cidade" id="cidade">
+      <br>
+      <br>
+      <label for="cep">CEP: </label>
+      <input type="text" name="cep" id="cep">
+      <label for="cep2">-</label>
+      <input type="text" name="cep2" id="cep2">
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Dados de Login</legend>
+      <label for="email">E-mail: </label>
+      <input type="text" name="email" id="email">
+      <br>
+      <br>
+      <label for="perfil">Imagem de perfil: </label>
+      <input type="file" name="perfil" id="perfil">
+      <br>
+      <br>
+      <label for="user">Login de usuário: </label>
+      <input type="text" name="user" id="user">
+      <br>
+      <br>
+      <label for="senha">Senha: </label>
+      <input type="password" name="senha" id="senha">
+      <br>
+      <br>
+      <label for="senha2">Confirme a senha: </label>
+      <input type="password" name="senha2" id="senha2">
+	</fieldset>
+	<br>
+	<fieldset>
+      <legend>Pesquisa de Interesse:</legend>
+
+      <label for="webmaster">Você deseja trabalhar como Webmaster? </label>
+      <br>
+      <input type="radio" name="webmaster" value="1"/>Sim
+      <br>
+      <input type="radio" name="webmaster" value="2"/>Não
+      <br>
+      <input type="radio" name="webmaster" value="3"/>Talvez
+      <br>
+      <input type="radio" name="webmaster" value="4"/>Quem sabe
+      <br>
+      <br>
+      <label for="aprender">O que você deseja aprender? </label>
+      <br>
+      <input type="checkbox" name="aprender" value="1"/>HTML
+      <br>
+      <input type="checkbox" name="aprender" value="2"/>CSS
+      <br>
+      <input type="checkbox" name="aprender" value="3"/>JavaScript
+      <br>
+      <input type="checkbox" name="aprender" value="4"/>Django
+      <br>
+      <br>
+      <label for="texto">Deixe seu comentário: </label>
+      <textarea rows="10" cols="40" maxlength="500" id="texto"></textarea>
+	</fieldset>
+	<br>
+	<input type="submit" name="enviar" value="Enviar">
+  <input type="reset" name="limpar" value="Limpar">
+    </form>
+</body>
+
+</html>
