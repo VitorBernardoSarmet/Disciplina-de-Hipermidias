@@ -1,0 +1,46 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header h1 {
+	background-color: darkgrey;
+	color: white;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+nav {
+	float: left;
+	margin-left: 5px;
+}
+
+nav li {
+	list-style-type: none;
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+	width: 110px;
+	background-color: lightgrey;
+	border-bottom: 1px solid white;
+	display: block;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: white;
+}
+
+section {
+	border-left: 2px solid black;
+	margin-left: 140px;
+	padding-left: 5px;
+}
+
+footer {
+	color: white;
+	background-color: darkgrey;
+	padding: 5px;
+}

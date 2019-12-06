@@ -1,0 +1,33 @@
+.menu_a li{ 
+	list-style-type: none;
+}
+
+.menu_a a{
+	text-decoration: none;
+	width: 120px;
+	color: black;
+	background-color: lightgrey; 
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid white;
+}
+
+.menu_b li{ 
+	list-style-type: none;
+	display: inline;
+}
+
+.menu_b a{
+	text-decoration: none;
+	text-align: center;
+	width: 120px;
+	color: black;
+	border-right: 1px solid white;
+	padding: 10px;
+	display: inline-block;
+	background-color: lightgrey;
+}
+
+a:hover {
+	background-color: white; 
+}
