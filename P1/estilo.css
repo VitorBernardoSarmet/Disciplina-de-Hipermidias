@@ -1,0 +1,283 @@
+/*All*/
+body {
+	background-color: #959595;
+	display: grid;
+	grid-template:
+	"header nav nav"
+	"aside-e section aside-d"
+	"aside-e section aside-d"
+	"footer footer footer"
+	/1fr 3fr 1fr;
+}
+
+
+/*Header*/
+header {
+	grid-area: header;
+}
+
+
+/*Nav*/
+nav {
+	grid-area: nav;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+}
+
+nav ul li a {
+	margin: 5px;
+}
+
+.lista1 li a {
+	border-right: 2px solid black;
+	padding: 5px 10px 5px 0px;
+}
+
+.A1 {
+	font-weight: bold;
+}
+
+.A2 {
+	color: white;
+	background-color: black;
+}
+
+nav form {
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+nav form .sombra {
+	box-shadow: 5px 5px 0px 0px black;
+}
+
+nav form .search {
+	border: 2px solid black;
+	margin-left: 15px;
+}
+
+nav form .go {
+	margin-left: -5px;
+	box-shadow: 5px 5px 0px 0px black;
+}
+
+.lista2 {
+	margin-top: 30px;
+}
+
+.lista2 li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px; 
+}
+
+nav .lista2 li a {
+	text-decoration: none;
+	border: 2px solid black;
+	width: 150px;
+	color: black;
+	text-align: center;
+	padding: 5px 20px 5px 20px;
+}
+
+
+/*Aside E*/
+.aside-e {
+	grid-area: aside-e;
+}
+
+.aside-e figure {
+	display: flex;
+	flex-direction: row;
+	background-color: #e79e6b;
+	border: 2px solid black;
+	align-items: center;
+	margin-left: 0px;
+	width: 90%;
+}
+
+.aside-e figure p {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.aside-e ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.aside-e ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+.aside-e .lista3 li {
+	display: flex;
+	margin: 5px 0px;
+}
+
+.aside-e .lista3 li a {
+	justify-content: center;
+	border: 2px solid black;
+	width: 90%;
+	padding: 5px 2px;
+}
+
+.aside-e h2 {
+	margin-bottom: -10px;
+}
+
+.aside-e .lista4 {
+	border: 2px solid black;
+	width: 90%;
+}
+
+.aside-e .lista4 li {
+	margin: 5px; 
+}
+
+
+/*Aside D*/
+.aside-d {
+	grid-area: aside-d;
+}
+
+.aside-d .main-spotlight {
+	display: flex;
+	justify-content: center;
+	margin-right: 0px;
+}
+
+.aside-d .small-spotlight {
+	display: flex;
+	flex-direction: row;
+	background-color: #ca3838;
+	border: 2px solid black;
+	margin-right: 0px;
+}
+
+.aside-d .small-spotlight p{
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+
+/*Footer*/
+footer {
+	grid-area: footer;
+	display: flex;
+	border-top: 2px solid black;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+footer ul {
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+}
+
+footer ul a {
+	border-right: 2px solid black;
+	padding: 5px 10px 5px 0px;
+	margin: 5px;
+}
+
+footer figure a{
+	margin-right: 10px;
+}
+
+footer .topo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+/*Section*/
+section {
+	grid-area: section;
+	flex-direction: column;
+	display: flex;
+}
+
+section article {
+	margin: 15px;
+	padding: 10px;
+}
+
+section article .data {
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+section article .newstitle {
+	font-weight: bold;
+    text-decoration: underline;
+}
+
+section .box1 {
+	background-color: #ca3838;
+	display: grid;
+	grid-template:
+	"box1-title box1-title"
+	"box1-main box1-main"
+	"box1-datas box1-datas"
+	/1fr 3fr
+}
+
+section .box1-title {
+	grid-area: box1-title;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+}
+
+section .box1-main {
+	grid-area: box1-main;
+	flex-direction: row;
+	display: flex;
+}
+
+.box1-main .news-main {
+	flex-direction: column;
+	display: flex;
+	margin-left: 5px;
+	margin-top: -20px;
+}
+
+.box1-main .news-main p{
+	margin-bottom: -5px;
+}
+
+.box1-datas {
+	grid-area: box1-datas;
+	display: grid;
+	grid-template:
+	"p a"
+	"p a"
+	"p a"
+	/1fr 3fr;  
+}
+
+.box1-datas a{
+	margin-top: 15px;
+}
+
+.box2 {
+	background-color: #ca3838;
+	display: flex;
+	flex-direction: column;
+}
+
+section a {
+	color: black;
+}
