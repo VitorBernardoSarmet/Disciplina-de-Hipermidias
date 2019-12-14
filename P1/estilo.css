@@ -228,13 +228,25 @@ section .box1 {
 	background-color: #ca3838;
 	display: grid;
 	grid-template:
-	"box1-title box1-title"
+	". ."
 	"box1-main box1-main"
 	"box1-datas box1-datas"
 	/1fr 3fr
 }
 
 section .box1-title {
+	grid-area: box1-title;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	margin: 15px;
+	margin-bottom: -15px;
+	background-color: #ca3838;
+}
+
+section .box1-title1 {
 	grid-area: box1-title;
 	flex-direction: row;
 	display: flex;
