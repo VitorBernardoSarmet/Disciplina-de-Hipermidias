@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>P2 de Hipermidias</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Vítor Bernardo Sarmet">
+	<script type="text/javascript" src="p2.js"></script>
+</head>
+<body>
+
+	<form name="form" method="post">
+		Nome: <input type="text" id="nome">
+		<br><br>
+		Telefone: <input type="text" id="telefone">
+		<br><br>	
+		Data de chegada: <input type="date" id="dataC">
+		<br><br>
+		Data de saída: <input type="date" id="dataS">
+		<br><br>
+		Selecione o tipo de quarto:
+		<select id="qntQ">
+			<option value="1">Single</option>
+			<option value="2">Double</option>
+			<option value="3">Triple</option>
+		</select>
+		<br><br>
+
+		Selecione o número de crianças menores de 5 anos: (máximo de 4 hóspedes)
+		<select id="qntC">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<br><br>
+
+		<input type="submit" id="salvar" value="Enviar">
+	</form>
+</body>
+</html>
